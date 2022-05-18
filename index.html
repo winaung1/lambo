@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lambo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+       body{
+            width: 100%;
+            height: 100vh;
+            background: rgb(139,139,142);
+            background: linear-gradient(90deg, rgba(139,139,142,1) 0%, rgba(121,81,9,1) 100%, rgba(255,237,0,1) 100%);
+         
+        }
+        .right_side{
+            width: 1080px;
+            height: 600px;
+            background-image: url(/images/lambobg-removebg-preview.png);
+            background-size: contain;
+            background-position: right center;
+            background-repeat: no-repeat;
+           
+
+           
+        }
+        button{
+            -webkit-box-shadow: 1px 14px 22px 0px #000000; 
+box-shadow: 1px 14px 22px 0px #000000;
+        }
+    </style>
+</head>
+<body class="overflow-hidden">
+    <nav class="flex items-center justify-between p-5 px-40">
+        <div class="logo">
+            <img class="w-40" src="/images/lambo-logo-removebg-preview.png" alt="">
+        </div>
+        <div class="right_button">
+            <button class="bg-black text-yellow-400 rounded-full px-5 py-4 text-xl font-bold border-[2px] border-yellow-400">Test Drive</button>
+        </div>
+    </nav>
+    <main>
+        <div class="right_side w-full relative">
+            <!-- <img class="w-[1280px] ml-60"  src="/images/BMW1.png" alt=""> -->
+        </div>
+        <div class="left_side w-3/4 text-gray-300 justify-between flex items-center absolute bottom-20 left-40">
+            <div class="w-96">
+                <h1 class="bmw_h1 text-yellow-400 font-bold pb-5 text-2xl">THE LAMBORGHINI</h1>
+                <h1 class="font-bold text-6xl pb-5">2020 Aventador</h1>
+                <p class="pb-5">The strength of the 2020 Aventador is in its lightness and
+                    agility. The car not only delivers fun in the big city
+                    limits but make great sounds.
+                </p>
+            </div>
+            <div>
+
+                <h1 class="pb-5 font-bold text-xl text-white">Choose your color</h1>
+                <button value="red" class="red bg-yellow-600 w-10 h-10 rounded-full"></button>
+                <button value="blue" class="blue bg-gray-400 w-10 h-10 rounded-full"></button>
+                <button value="black" class="black bg-white w-10 h-10 rounded-full"></button>
+            </div>
+        </div>
+    </main>
+    <script src="/main.js"></script>
+</body>
+</html>
